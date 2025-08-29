@@ -11,11 +11,10 @@ Built a deep learning system to automate the diagnosis and classification of neu
 
 ## Key Features
 
-- Preprocessing pipeline for MRI scan normalization and augmentation
+- Preprocessing pipeline for MRI scan normalisation and augmentation
 - Custom PyTorch models optimized for 3D medical imaging
-- Interactive Jupyter notebooks for visualization and analysis
-- Comprehensive evaluation metrics including sensitivity, specificity, and F1-score
-- Model interpretability tools to highlight regions of interest
+- Interactive Jupyter notebooks for visualisation and analysis
+- Comprehensive evaluation metrics
 
 ## Technology Stack
 
