@@ -52,7 +52,7 @@ pip install -r requirements.txt
 
 ## Results
 
-Achieved 97.18% test accuracy with my second CNN, slightly higher than my first, smaller model at 96.41%. Both outperformed traditional methods, with random forest and linear regression reaching 93.44% and 90.01%, respectively.
+Achieved 97.18% test accuracy with my second CNN, slightly higher than my first, smaller model at 96.41%. Both significantly outperformed traditional methods, with random forest and linear regression reaching 93.44% and 90.01%, respectively.
 
 
 ## License
