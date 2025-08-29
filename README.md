@@ -7,7 +7,7 @@
 
 ## Overview
 
-A deep learning-based system for automated diagnosis and classification of neurological conditions from MRI scans. This project leverages state-of-the-art convolutional neural networks implemented in PyTorch to assist medical professionals in the early detection and classification of brain abnormalities.
+Built a deep learning system to automate the diagnosis and classification of neurological conditions from MRI scans. Used convolutional neural networks (CNNs) in PyTorch to support early detection of brain abnormalities and compared performance against traditional machine learning methods such as linear regression and random forests.
 
 ## Key Features
 
@@ -29,14 +29,9 @@ A deep learning-based system for automated diagnosis and classification of neuro
 ```
 mri-diagnosis-project/
 ├── data/                  # Data directory (not included in repo)
-├── models/                # PyTorch model definitions
+│   ├── Testing/           # MRI preprocessing utilities
+│   ├── Training/          # Training scripts and utilities
 ├── notebooks/             # Jupyter notebooks for exploration and visualization
-├── src/                   # Source code
-│   ├── preprocessing/     # MRI preprocessing utilities
-│   ├── training/          # Training scripts and utilities
-│   └── evaluation/        # Model evaluation and metrics
-├── tests/                 # Unit and integration tests
-├── requirements.txt       # Project dependencies
 └── README.md              # Project documentation
 ```
 
@@ -55,35 +50,10 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-## Usage
-
-```python
-from src.models import BrainMRIClassifier
-from src.preprocessing import preprocess_scan
-
-# Load and preprocess a scan
-preprocessed_scan = preprocess_scan('path/to/scan.nii')
-
-# Load a pretrained model
-model = BrainMRIClassifier.load_from_checkpoint('models/best_model.pth')
-
-# Get prediction
-prediction = model.predict(preprocessed_scan)
-print(f"Diagnosis: {prediction}")
-```
-
 ## Results
 
-The model achieves 94% accuracy on the test dataset, with 92% sensitivity and 95% specificity for detecting abnormalities. Detailed performance metrics and validation results are available in the `notebooks/model_evaluation.ipynb` notebook.
+Achieved 97.18% test accuracy with my second CNN, slightly higher than my first, smaller model at 96.41%. Both outperformed traditional methods, with random forest and linear regression reaching 93.44% and 90.01%, respectively.
 
-![Model Performance](path/to/performance_graph.png)
-
-## Future Improvements
-
-- Implement additional model architectures (ResNet3D, DenseNet3D)
-- Add support for multi-modal imaging (combining T1, T2, FLAIR)
-- Develop explainable AI components for clinical decision support
-- Optimize for deployment in resource-constrained environments
 
 ## License
 
