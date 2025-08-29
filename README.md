@@ -31,6 +31,7 @@ mri-diagnosis-project/
 │   ├── Testing/           # MRI preprocessing utilities
 │   ├── Training/          # Training scripts and utilities
 ├── notebooks/             # Jupyter notebooks for exploration and visualization
+│   ├── mri_diagnosis_strater.ipynb          # MAIN FILE
 └── README.md              # Project documentation
 ```
 
